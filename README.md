@@ -1,1 +1,1 @@
-# CV_Application
+# Cover Letter Application
