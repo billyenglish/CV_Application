@@ -19,39 +19,70 @@ const PersonalDetails = () => {
                             <UserInput
                                 type="text"
                                 placeholder="Full Name"
-                                className="border-2 border-black h-12 w-72"
+                                className="
+                                    border-2
+                                    border-black
+                                    h-12 w-72
+                                    rounded-sm
+                                "
                             />
                             <UserInput
                                 type="text"
                                 placeholder="Job Title"
-                                className="border-2 border-black h-12 w-72"
+                                className="
+                                    border-2
+                                  border-black
+                                    h-12 w-72
+                                    rounded-sm
+                                "
                             />
                         </div>
                         <div className="flex gap-6">
                             <UserInput
                                 type="email"
                                 placeholder="Email"
-                                className="border-2 border-black h-12 w-72"
+                                className="
+                                    border-2
+                                    border-black
+                                    h-12 w-72
+                                    rounded-sm
+                                "
                             />
                             <UserInput
-                                type="phone"
+                                type="tel"
                                 placeholder="Phone"
-                                className="border-2 border-black h-12 w-72"
+                                className="
+                                    border-2
+                                  border-black
+                                    h-12 w-72
+                                    rounded-sm
+                                "
                             />
                         </div>
                         <div>
                             <UserInput
                                 type="text"
                                 placeholder="Address"
-                                className="border-2 border-black h-12 w-150"
+                                className="
+                                    border-2
+                                  border-black
+                                    h-12 w-150
+                                    rounded-sm
+                                "
                             />
                         </div>
                         <div>
                             <textarea
-                                className="border-2 border-black h-64 w-150">
+                                className="
+                                    border-2
+                                    border-black
+                                    h-64 w-150
+                                    rounded-sm
+                                "
+                                >
                             </textarea>
                         </div>
-                        <div className="flex justify-between" placeholder="">
+                        <div className="flex justify-between" placeholder="Summary">
                             <Button text="Submit" />
                             <Button text="Clear" />
                         </div>
