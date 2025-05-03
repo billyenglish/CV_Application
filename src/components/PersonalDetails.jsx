@@ -1,47 +1,63 @@
+import Nav from "../components/Nav";
 import UserInput from "../subcomponents/UserInput";
 import Footer from "../components/Footer";
+import Button from "../subcomponents/Button";
 
 const PersonalDetails = () => {
 
     return (
         <>
-            <section className="min-w-screen min-h-[95vh]">
-                <form className="flex flex-col gap-y-6">
-                    <div className="flex gap-x-6">
-                        <UserInput
-                            type="text"
-                            placeholder="Full Name"
-                        />
+            <div className="h-[95vh] min-w-full flex gap-2">
+                <Nav className="border-2 border-black" />
+                <section className="flex flex-col items-center border-2 border-black min-w-[90%]">
 
-                        <UserInput
-                            type="text"
-                            placeholder="Job Title"
-                        />
-                    </div>
-                    <div className="flex gap-x-6">
-                        <UserInput
-                            type="email"
-                            placeholder="Email"
-                        />
 
-                        <UserInput
-                            type="phone"
-                            placeholder="Phone"
-                        />
-                    </div>
-                    <div>
-                        <UserInput
-                            type="text"
-                            placeholder="Addres"
-                        />
-                    </div>
-                    <div>
-                        <textarea className="border-2 black-border h-100 w-150">
+                    <h2 className="text-3xl font-light tracking-wider pt-12 pb-20">Personal Details</h2>
 
-                        </textarea>
-                    </div>
-                </form>
-            </section>
+                    <form className="flex flex-col gap-4 border-2 border-black p-6 rounded-md">
+                        <div className="flex gap-6">
+                            <UserInput
+                                type="text"
+                                placeholder="Full Name"
+                                className="border-2 border-black h-12 w-72"
+                            />
+                            <UserInput
+                                type="text"
+                                placeholder="Job Title"
+                                className="border-2 border-black h-12 w-72"
+                            />
+                        </div>
+                        <div className="flex gap-6">
+                            <UserInput
+                                type="email"
+                                placeholder="Email"
+                                className="border-2 border-black h-12 w-72"
+                            />
+                            <UserInput
+                                type="phone"
+                                placeholder="Phone"
+                                className="border-2 border-black h-12 w-72"
+                            />
+                        </div>
+                        <div>
+                            <UserInput
+                                type="text"
+                                placeholder="Address"
+                                className="border-2 border-black h-12 w-150"
+                            />
+                        </div>
+                        <div>
+                            <textarea
+                                className="border-2 border-black h-64 w-150">
+                            </textarea>
+                        </div>
+                        <div className="flex justify-between" placeholder="">
+                            <Button text="Submit" />
+                            <Button text="Clear" />
+                        </div>
+                    </form>
+                </section>
+            </div>
             <Footer />
         </>
     )
