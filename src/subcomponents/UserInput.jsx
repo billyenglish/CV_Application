@@ -5,7 +5,7 @@ const UserInput = (props) => {
             <input
                 type={props.text}
                 placeholder={props.placeholder}
-                className="border-2 border-black h-12 w-72"
+                className={props.className}
             />
         </>
     );
