@@ -13,7 +13,7 @@ const PersonalDetails = () => {
 
                     <div className="flex items-center content-center gap-20 pt-16 pb-18">
                         <h2 className="text-3xl font-light tracking-wider">Personal Details</h2>
-                        <div className="flex self-center items-center gap-10 h-full">
+                        <div className="flex items-center gap-10 h-full">
                             <Button
                                 type="button"
                                 text="Back"
