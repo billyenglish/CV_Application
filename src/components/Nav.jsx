@@ -33,7 +33,7 @@ const Nav = () => {
                 {
                     navMenuTop.map((navItems) => (
                         <ul key={navItems.id}>
-                            <li className="text-3xl">{navItems.icons}</li>
+                            <li className="text-3xl hover:cursor-pointer hover:scale-125">{navItems.icons}</li>
                         </ul>
                     ))
                 }
@@ -43,7 +43,7 @@ const Nav = () => {
                 {
                     navMenuBottom.map((navItems) => (
                         <ul key={navItems.id}>
-                            <li className="text-3xl">{navItems.icons}</li>
+                            <li className="text-3xl hover:cursor-pointer hover:scale-125">{navItems.icons}</li>
                         </ul>
                     ))
                 }
