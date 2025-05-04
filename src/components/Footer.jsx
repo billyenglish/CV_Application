@@ -1,7 +1,12 @@
+const currentYear = () => {
+    let currentYear = new Date();
+    return currentYear.getFullYear();
+}
+
 const Footer = () => {
     return (
         <footer className="h-[5vh] border-2 border-black flex justify-center items-center">
-            <p className="text-md">&copy; Copyright By Billy English</p>
+            <p className="text-md">&copy; {currentYear()} Copyright By Billy English</p>
         </footer>
     );
 };
