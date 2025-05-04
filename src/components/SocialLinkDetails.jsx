@@ -11,7 +11,7 @@ const SocialLinkDetails = () => {
                 <section className="flex flex-col items-center w-[95%]">
                     <div className="flex items-center content-center gap-20 pt-16 pb-18">
                         <h2 className="text-3xl text-light tracking-wider">Social Links</h2>
-                        <div className="flex gap-2">
+                        <div className="flex gap-10 h-full">
                             <Button type="button" text="Back" />
                             <Button type="button" text="Next" />
                         </div>
@@ -19,7 +19,7 @@ const SocialLinkDetails = () => {
 
                     <form className="flex flex-col gap-10 p-10 pb-36 border-2 border-black rounded-sm">
                         <div className="flex items-center justify-evenly gap-10 border-black">
-                            <label>Website</label>
+                            <label className="text-xl font-normal">Website</label>
                             <UserInput
                                 type="text"
                                 placeholder="Website Link"
@@ -34,7 +34,7 @@ const SocialLinkDetails = () => {
                         </div>
 
                         <div className="flex items-center justify-evenly gap-10 border-black">
-                            <label>Linkedin</label>
+                            <label className="text-xl font-normal">Linkedin</label>
                             <UserInput
                                 type="text"
                                 placeholder="LinkedIn Link"
@@ -48,7 +48,7 @@ const SocialLinkDetails = () => {
                             />
                         </div>
                         <div className="flex items-center justify-evenly gap-10 border-black">
-                            <label>GitHub</label>
+                            <label className="text-xl font-normal">GitHub</label>
                             <UserInput
                                 type="text"
                                 placeholder="GitHub Link"
