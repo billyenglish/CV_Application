@@ -1,11 +1,11 @@
-const UserInput = (props) => {
+const UserInput = ({ type = "text", placeholder = "Full Name", className }) => {
 
     return (
         <>
             <input
-                type={props.text}
-                placeholder={props.placeholder}
-                className={props.className}
+                type={type}
+                placeholder={placeholder}
+                className={className}
             />
         </>
     );
