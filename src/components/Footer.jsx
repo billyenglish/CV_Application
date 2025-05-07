@@ -5,8 +5,8 @@ const currentYear = () => {
 
 const Footer = () => {
     return (
-        <footer className="h-[5vh] border-2 border-black flex justify-center items-center">
-            <p className="text-md">&copy; {currentYear()} Copyright By Billy English</p>
+        <footer className="flex justify-center fixed bottom-0 height-5 min-w-full pt-5 pb-5 z-20">
+            <p className="text-md font-normal">&copy; {currentYear()} Copyright By Billy English</p>
         </footer>
     );
 };
