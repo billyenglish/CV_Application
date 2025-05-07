@@ -1,109 +1,67 @@
-import Nav from "../components/Nav";
+import Nav from "./Nav";
+import Footer from "./Footer";
 import UserInput from "../subcomponents/UserInput";
-import Footer from "../components/Footer";
 import Button from "../subcomponents/Button";
+import TextArea from "../subcomponents/TextArea";
 
 const PersonalDetails = () => {
 
     return (
         <>
-            <div className="h-[95vh] min-w-full flex gap-2">
-                <Nav className="border-2 border-black" />
-                <section className="flex flex-col items-center border-2 border-black w-[95%]">
-
-                    <div className="flex items-center content-center gap-20 pt-16 pb-18">
-                        <h2 className="text-3xl font-light tracking-wider">Personal Details</h2>
-                        <div className="flex items-center gap-10 h-full">
-                            <Button
-                                type="button"
-                                text="Back"
-                            />
-
-                            <Button
-                                type="button"
-                                text="Next"
-                            />
-                        </div>
+            <Nav />
+            <section className="flex flex-col items-center border-2 min-h-screen gap-36">
+                <div className="flex justify-center items-center pt-20 gap-14">
+                    <h2 className="text-3xl font-light">Personal Details</h2>
+                    <div className="flex gap-6">                    
+                        <Button text="Back" />
+                        <Button text="Next" />
                     </div>
-
-                    <form className="flex flex-col gap-4 border-2 border-black p-6 rounded-md">
-                        <div className="flex gap-6">
+                </div>
+                <form className="flex flex-col border-2 w-auto gap-4 items-center pt-5 pb-10 pl-6 pr-6 rounded-md">
+                    <div className="flex gap-6">
+                        <div className="flex flex-col gap-2">
+                            <label>Full Name</label>
                             <UserInput
                                 type="text"
                                 placeholder="Full Name"
-                                className="
-                                    border-2
-                                    border-black
-                                    h-12 w-72
-                                    rounded-sm
-                                "
+                                className="border-2 h-10 w-70"
                             />
+                        </div>
+                        <div className="flex flex-col gap-2">
+                            <label>Job Title</label>
                             <UserInput
                                 type="text"
                                 placeholder="Job Title"
-                                className="
-                                    border-2
-                                  border-black
-                                    h-12 w-72
-                                    rounded-sm
-                                "
+                                className="border-2 h-10 w-70"
                             />
                         </div>
-                        <div className="flex gap-6">
-                            <UserInput
-                                type="email"
-                                placeholder="Email"
-                                className="
-                                    border-2
-                                    border-black
-                                    h-12 w-72
-                                    rounded-sm
-                                "
-                            />
-                            <UserInput
-                                type="tel"
-                                placeholder="Phone"
-                                className="
-                                    border-2
-                                  border-black
-                                    h-12 w-72
-                                    rounded-sm
-                                "
-                            />
-                        </div>
-                        <div>
+                    </div>
+                    <div className="flex gap-6">
+                        <div className="flex flex-col gap-1">
+                            <label>Email</label>
                             <UserInput
                                 type="text"
-                                placeholder="Address"
-                                className="
-                                    border-2
-                                  border-black
-                                    h-12 w-150
-                                    rounded-sm
-                                "
+                                placeholder="Email"
+                                className="border-2 h-10 w-70"
                             />
                         </div>
-                        <div>
-                            <textarea
-                                className="
-                                    border-2
-                                    border-black
-                                    h-64 w-150
-                                    resize-none
-                                    overflow-y-hidden
-                                    rounded-sm
-                                "
-                                placeholder="Summary "
-                                >
-                            </textarea>
+                        <div className="flex flex-col gap-1">
+                            <label>Phone</label>
+                            <UserInput
+                                type="text"
+                                placeholder="Phone"
+                                className="border-2 h-10 w-70"
+                            />
                         </div>
-                        <div className="flex justify-between" placeholder="Summary">
-                            <Button text="Submit" />
-                            <Button text="Clear" />
+                    </div>
+                    <div>
+                        <div className="flex flex-col">
+                            <label>Summary</label>
+                            <TextArea className="border-2 h-70 w-146" />
                         </div>
-                    </form>
-                </section>
-            </div>
+                    </div>
+                </form>
+            </section>
             <Footer />
         </>
     )
