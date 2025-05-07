@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { FaHome } from "react-icons/fa";
 import { FaLink } from "react-icons/fa";
 import { FaComputer } from "react-icons/fa6";
@@ -8,15 +9,17 @@ import { FaCertificate } from "react-icons/fa";
 import { FaOpenid } from "react-icons/fa";
 import { FaFilePdf } from "react-icons/fa";
 import { FaTrashRestoreAlt } from "react-icons/fa";
+import { FaSketch } from "react-icons/fa";
 
 const navMenuTop = [
-    { icons: <FaHome />, id: 0 },
-    { icons: <FaLink />, id: 1 },
-    { icons: <FaComputer />, id: 2 },
-    { icons: <FaHammer />, id: 3 },
-    { icons: <FaPrint />, id: 4 },
-    { icons: <FaGraduationCap />, id: 5 },
-    { icons: <FaCertificate />, id: 6 }
+    { icons: <FaHome />, navLinks: "/", id: 0 },
+    { icons: <FaComputer />, navLinks: "/personal-details", id: 1 },
+    { icons: <FaLink />, navLinks: "/social-link-detail", id: 2 },
+    { icons: <FaHammer />, navLinks: "/work-details", id: 3 },
+    { icons: <FaGraduationCap />, navLinks: "/education", id: 4 },
+    { icons: <FaSketch />, navLinks: "/technical-skills", id: 5 },
+    { icons: <FaPrint />, navLinks: "/project", id: 6 },
+    { icons: <FaCertificate />, navLinks: "/certification", id: 7 }
 ];
 
 const navMenuBottom = [
@@ -28,25 +31,21 @@ const navMenuBottom = [
 const Nav = () => {
 
     return (
-        <nav className="w-[5%] h-full flex flex-col items-center justify-between pt-8 pb-8">
-            <div className="flex flex-col gap-6">
-                {
-                    navMenuTop.map((navItems) => (
-                        <ul key={navItems.id}>
-                            <li className="text-3xl hover:cursor-pointer hover:scale-125">{navItems.icons}</li>
-                        </ul>
-                    ))
-                }
+        <nav className="flex flex-col items-center justify-between absolute border-2 top-0 min-h-full w-[5rem] pt-15 pb-15">
+            <div className="flex flex-col gap-8 text-3xl">
+                {navMenuTop.map((navItems) => (
+                    <ul key={navItems.id}>
+                        <li className="hover:scale-120 cursor-pointer ease-in-out"><Link to={navItems.navLinks}>{navItems.icons}</Link></li>
+                    </ul>
+                ))}
             </div>
 
-            <div className="flex flex-col gap-6">
-                {
-                    navMenuBottom.map((navItems) => (
-                        <ul key={navItems.id}>
-                            <li className="text-3xl hover:cursor-pointer hover:scale-125">{navItems.icons}</li>
-                        </ul>
-                    ))
-                }
+            <div className="flex flex-col gap-10 text-3xl">
+                {navMenuBottom.map((navItems) => (
+                    <ul key={navItems.id}>
+                        <li className="hover:scale-120 cursor-pointer ease-in-out">{navItems.icons}</li>
+                    </ul>
+                ))}
             </div>
         </nav>
     );
