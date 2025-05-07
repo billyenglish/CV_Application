@@ -1,10 +1,13 @@
+import { useNavigate } from "react-router-dom";
 import Footer from "../components/Footer";
 
 const Home = () => {
 
+    const navigation = useNavigate();
+
     return (
         <>
-        <section className="flex items-center justify-center border-1 min-w-screen h-[95vh]">
+        <section className="flex items-center justify-center border-1 min-w-full min-h-screen">
             <div className="flex flex-col gap-10">
                     <h1 className="text-6xl font-extralight text-shadow-orange-500">Cover Letter Builder</h1>
                     <div className="flex justify-center">
@@ -18,6 +21,7 @@ const Home = () => {
                                 hover:text-white
                                 hover:bg-black
                             "
+                            onClick={() => navigation("/personal-details")}
                         >
                             Get Started
                         </button>
