@@ -8,10 +8,10 @@ const SocialLinkDetails = () => {
     return (
         <>
             <Nav />
-            <section className="flex flex-col items-center border-2 min-h-screen gap-40">
-                <div className="flex justify-center items-center pt-20 gap-14">
+            <section className="flex flex-col items-center border-2 min-h-screen gap-32">
+                <div className="flex justify-center items-center pt-14 gap-14">
                     <h2 className="text-3xl font-light">Social Links</h2>
-                    <div className="flex gap-6">                    
+                    <div className="flex gap-6">
                         <Button text="Back" />
                         <Button text="Next" />
                     </div>
