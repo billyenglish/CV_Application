@@ -1,9 +1,22 @@
+import Nav from "./Nav";
+import Footer from "./Footer";
+import Button from "../subcomponents/Button";
+
 const CertsSkillsInterests = () => {
+
     return (
         <>
-            <section>
-                Certs
+            <Nav />
+            <section className="flex flex-col items-center border-2 min-h-screen gap-32 overflow-y-hidden">
+                <div className="flex justify-center items-center pt-14 gap-14">
+                    <h2 className="text-3xl font-light">Certs, Skills, &amp; Interests</h2>
+                    <div className="flex gap-6">
+                        <Button text="Back" />
+                        <Button text="Next" />
+                    </div>
+                </div>
             </section>
+            <Footer />
         </>
     )
 }
