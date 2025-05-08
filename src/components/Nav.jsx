@@ -15,7 +15,7 @@ const navMenuTop = [
     { icons: <FaHome />, navLinks: "/", id: 0 },
     { icons: <FaComputer />, navLinks: "/personal-details", id: 1 },
     { icons: <FaLink />, navLinks: "/social-link-detail", id: 2 },
-    { icons: <FaHammer />, navLinks: "/work-details", id: 3 },
+    { icons: <FaHammer />, navLinks: "/work-detail", id: 3 },
     { icons: <FaGraduationCap />, navLinks: "/education", id: 4 },
     { icons: <FaSketch />, navLinks: "/technical-skills", id: 5 },
     { icons: <FaPrint />, navLinks: "/project", id: 6 },
@@ -31,7 +31,7 @@ const navMenuBottom = [
 const Nav = () => {
 
     return (
-        <nav className="flex flex-col items-center justify-between absolute border-2 top-0 min-h-full w-[5rem] pt-15 pb-15">
+        <nav className="flex flex-col items-center justify-between absolute top-0 min-h-full w-[5rem] pt-15 pb-15">
             <div className="flex flex-col gap-8 text-3xl">
                 {navMenuTop.map((navItems) => (
                     <ul key={navItems.id}>
