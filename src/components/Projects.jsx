@@ -11,8 +11,8 @@ const Projects = () => {
                 <div className="flex justify-center items-center pt-14 gap-14">
                     <h2 className="text-3xl font-light">Projects</h2>
                     <div className="flex gap-6">
-                        <Button text="Back" />
-                        <Button text="Next" />
+                        <Button type="button" text="Back" />
+                        <Button type="button" text="Next" />
                     </div>
                 </div>
             </section>
