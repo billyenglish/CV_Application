@@ -17,11 +17,11 @@ function App() {
         <Route index element={<Home />} />
         <Route path="/personal-details" element={<PersonalDetails />} />
         <Route path="/social-link-detail" element={<SocialLinkDetails />} />
-        <Route path="/work-detials" element={<WorkDetails />} />
+        <Route path="/work-detail" element={<WorkDetails />} />
         <Route path="/education" element={<Education />} />
-        <Route path="technical-skills" element={<TechnicalSkills />} />
-        <Route path="project" element={<Projects />} />
-        <Route path="certification" element={<CertsSkillsInterests />} />
+        <Route path="/technical-skills" element={<TechnicalSkills />} />
+        <Route path="/project" element={<Projects />} />
+        <Route path="/certification" element={<CertsSkillsInterests />} />
       </Routes>
     </BrowserRouter>
   );
