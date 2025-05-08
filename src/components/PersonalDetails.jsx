@@ -57,7 +57,7 @@ const PersonalDetails = () => {
                     <div>
                         <div className="flex flex-col">
                             <label>Summary</label>
-                            <TextArea className="border-2 h-70 w-146" />
+                            <TextArea className="border-2 h-70 w-146" placeholder="Summary" />
                         </div>
                     </div>
                 </form>
