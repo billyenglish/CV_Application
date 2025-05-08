@@ -1,6 +1,6 @@
-const TextArea = ({ className = "border-2 h-60 w-126" }) => {
+const TextArea = (props) => {
     return (
-        <textarea className={className}>
+        <textarea className={props.className} placeholder={props.placeholder}>
         </textarea>
     );
 }
