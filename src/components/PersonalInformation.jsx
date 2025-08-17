@@ -7,7 +7,7 @@ import { useNavigate } from "react-router-dom";
 
 const PersonalInformation = () => {
 
-    const navigation = useNavigate('/');
+    const navigation = useNavigate('');
 
     return (
         <>
@@ -19,7 +19,7 @@ const PersonalInformation = () => {
                     <header className="header_container">
                         <h2 className="form_title">Personal Information</h2>
                         <div>
-                            <Button className="form_button" text='Next' onClick={() => navigation('work-experience')} />
+                            <Button className="form_button" text='Next' onClick={() => navigation('/work-experience')} />
                         </div>
                     </header>
 
