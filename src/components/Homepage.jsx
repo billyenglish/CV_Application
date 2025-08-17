@@ -1,7 +1,10 @@
 import "../styles/homepage.css"
 import Button from "../subcomponents/Button";
+import { useNavigate } from "react-router-dom";
 
 const Homepage = () => {
+
+    const navigate = useNavigate('personal-information');
 
     return (
         <section className="homepage_section">
@@ -12,6 +15,7 @@ const Homepage = () => {
                 <Button
                     className="homepage_button"
                     text='Get Started'
+                    onClick={() => navigate('personal-information')}
                 />
             </div>
         </section>
