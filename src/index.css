@@ -21,12 +21,92 @@ body {
     font-size: 62.5%;
 }
 
+/* End of Body Section */
+
 /* Section */
 
 section {
     border: 1px solid #000;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
+
+/* End of Section */
+
+/* Form Section */
+
+.form_container {
+    border: 1px solid #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6rem;
+}
+
+.header_section {
+    border: 1px solid #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 34rem;
+    padding: 1rem 2rem;
+}
+
+.header_title {
+    font-size: 1.5rem;
+    font-weight: 4 00;
+}
+
+.next_button {
+    font-size: 1rem;
+    font-weight: 400;
+    padding: .1rem .5rem;
+}
+
+form {
+    border: 1px solid #000;
+    display: flex;
+    flex-direction: column;
+}
+
+form div {
+    display: flex;
+    gap: 1rem;
+    padding: .5rem;
+}
+
+.name_label {
+    font-size: 1rem;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.half_input_length {
+    height: 2.5rem;
+    width: 16rem;
+}
+
+.full_input_length {
+    height: 2.5rem;
+    width: 33rem;
+}
+
+.full_textarea_length {
+    height: 16.5rem;
+    width: 33rem;
+}
+
+input::placeholder {
+    font-family: 'Karla';
+    font-size: 1rem;
+    color: #000;
+}
+
+/* End of Form */
 
 button {
     font-family: Karla;
