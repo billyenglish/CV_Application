@@ -1,7 +1,7 @@
-const TextArea = () => {
+const TextArea = ({ className }) => {
 
     return (
-        <textarea>
+        <textarea className={className}>
         </textarea>
     );
 };
