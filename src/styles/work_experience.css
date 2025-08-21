@@ -1,0 +1,28 @@
+.bullet_point_button_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.more {
+    display: flex;
+    justify-content: center;
+}
+
+.bullet_point_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.bullet_input {
+    height: 2.5rem;
+    width: 20rem;
+}
+
+.bullet_button {
+    font-size: 1rem;
+    height: 2.5rem;
+    width: 5rem;
+}
