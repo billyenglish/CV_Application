@@ -1,0 +1,17 @@
+.bullet_points_input_container {
+    border: 1px solid #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bullet_input {
+    display: flex;
+    align-self: normal;
+    justify-items: first baseline;
+}
+
+.bullet_inputs {
+    height: 2.5rem;
+    width: 20rem;
+}
