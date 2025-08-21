@@ -13,7 +13,7 @@ const PersonalInformation = () => {
                     <div>
                         <Button
                             text='Next'
-                            className="next_button"
+                            className="current_button"
                         />
                     </div>
                 </header>
@@ -64,7 +64,7 @@ const PersonalInformation = () => {
                     </div>
                     <div>
                         <label htmlFor="address" className='name_label'>
-                            Address
+                            Employment Duration
                             <Input
                                 type='text'
                                 name='address'
